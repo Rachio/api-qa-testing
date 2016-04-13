@@ -8,4 +8,4 @@ Use a testing framework like [Spock] (http://spockframework.github.io/spock/docs
 
 1. Retrieve the information for a person using these endpoints (https://rachio.readme.io/docs/publicpersoninfo) (https://rachio.readme.io/docs/publicpersonid) and assert the user has one device.
 
-2.
+2. Testing
