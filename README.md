@@ -9,3 +9,9 @@ Use a testing framework like [Spock] (http://spockframework.github.io/spock/docs
 1. Retrieve the information for a person using these endpoints (https://rachio.readme.io/docs/publicpersoninfo) (https://rachio.readme.io/docs/publicpersonid) and assert the user has one device.
 
 2. Start a zone for 5 minutes (https://rachio.readme.io/docs/zonestart), verify the zone is indeed running (https://rachio.readme.io/docs/publicdeviceidcurrent_schedule), stop the zone (https://rachio.readme.io/docs/devicestop_water) and verify the device is not currently watering.
+
+3. Add a webhook (https://rachio.readme.io/docs/publicnotificationwebhook), verify the webhook exists (https://rachio.readme.io/docs/publicnotificationdeviceidwebhook), remove the webhook (https://rachio.readme.io/docs/publicnotificationdeviceidwebhook)
+
+4. Write a test that exercices some basic functionality and assert the results. 
+
+Good luck!
