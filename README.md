@@ -1,4 +1,4 @@
-# api_qa_testing
+# api-qa-testing
 
 Use the following API for testing https://rachio.readme.io/
 
