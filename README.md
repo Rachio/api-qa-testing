@@ -26,5 +26,5 @@ A `Schedule` represents a rule that the `Person` has setup in the Rachio app to 
 ###Webhooks
 A `Webhook` is a way to get HTTP callbacks when things happen to a `Device`. There are different event types that are returned in the callback and represent what happened to the device.
 
-####Extra credit
+##Extra credit
 Use your own HTTP server with webhooks to verify functionality. You may want to use a tool like [ngrok](https://ngrok.m/).
