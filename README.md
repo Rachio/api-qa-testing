@@ -21,7 +21,7 @@ A `Device` represents the physical sprinkler controller. A `Device` has informat
 A `Zone` represents an area in the `Person`'s yard where sprinklers can be run. It contains information about the `Zone`.
 
 ###Schedules
-A `Schedule` represents a rule that the `Person` has setup in the Rachio app to run a set of `Zone`'s. There are two types of schedules, Schedules Rules and Flex Schedule Rules. Both represent when the given zones will be turned on and off. Flex Schedule Rules cannot be controlled.
+A `Schedule` represents a rule that the `Person` has setup in the Rachio app to run a set of `Zone`'s. For this exercise you can just focus on ScheduleRules (not FlexScheduleRules).
 
 ###Webhooks
 A `Webhook` is a way to get HTTP callbacks when things happen to a `Device`. There are different event types that are returned in the callback and represent what happened to the device.
