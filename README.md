@@ -1,17 +1,29 @@
 # api-qa-testing
 
-Use the following Rachio open [API] (https://rachio.readme.io/) for testing.
+##Concepts
+The following are a few of the main concepts in our public API:
 
-A OAuth2 token will be provided.
+###Persons
+`Person`s are the core of the public Rachio API. A `Person` has information about the user as well as the `Device`'s that belong to the user
 
-Use a testing framework like [Spock] (http://spockframework.github.io/spock/docs/1.0/index.html) or a similiar DSL framework for RESTful endpoint testing.
+###Devices
+A `Device` represents the physical sprinkler controller. A `Device` has information about itself and has collections of `Zone`'s, `Schedule`'s, `Webhook`'s. 
 
-1. Retrieve the information for a person using these endpoints (https://rachio.readme.io/docs/publicpersoninfo) (https://rachio.readme.io/docs/publicpersonid) and assert the user has one device.
+###Zones
+A `Zone` represents an area in the `Person`'s yard where sprinklers can be run. It contains information about the `Zone`.
 
-2. Start a zone for 5 minutes (https://rachio.readme.io/docs/zonestart), verify the zone is indeed running (https://rachio.readme.io/docs/publicdeviceidcurrent_schedule), stop the zone (https://rachio.readme.io/docs/devicestop_water) and verify the device is not currently watering.
+###Schedules
+A `Schedule` represents a rule that the `Person` has setup in the Rachio app to run a set of `Zone`'s. There are two types of schedules, Schedules Rules and Flex Schedule Rules. Both represent when the given zones will be turned on and off. Flex Schedule Rules cannot be controlled.
 
-3. Add a webhook (https://rachio.readme.io/docs/publicnotificationwebhook), verify the webhook exists (https://rachio.readme.io/docs/publicnotificationdeviceidwebhook), remove the webhook (https://rachio.readme.io/docs/publicnotificationdeviceidwebhook)
+###Webhooks
+A `Webhook` is a way to get HTTP callbacks when things happen to a `Device`. There are different event types that are returned in the callback and represent what happened to the device.
 
-4. Write a test that exercices some basic functionality and assert the results. 
+##Your Task
+Given these cocepts, write a small test suite that exercises and verifies that the afformentioned concepts are functioning. We use [Spock](http://spockframework.github.io/spock/docs/1.0/index.html) for our testing, but feel free to use whatever you feel is the best tool for testing RESTful APIs.
+
+You can access all of the documentation for our public API [here](https://rachio.readme.io/). We will provide you with a valid oAuth token to use for your test suite. 
 
 Good luck!
+
+####PS/Extra credit
+Use your own HTTP server with webhooks to verify functionality. You may want to use a tool like [ngrok](https://ngrok.m/).
