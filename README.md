@@ -1,11 +1,11 @@
 # api-qa-testing
 
 ##Preface
-Given the cocepts below, write a small test suite that exercises and verifies that the afformentioned concepts are functioning. We use [Spock](http://spockframework.github.io/spock/docs/1.0/index.html) for our testing, but feel free to use whatever you feel is the best tool for testing RESTful APIs.
+Given the concepts below, write a small test suite that exercises and verifies that the afformentioned concepts are functioning. We use [Spock](http://spockframework.github.io/spock/docs/1.0/index.html) for our testing and would prefer for this exercise that toolset by used.
 
 You can access all of the documentation for our public API [here](https://rachio.readme.io/) and we are happy to answer any questions. We will provide you with a valid oAuth token to use for your test suite. 
 
-We expect that this will take you somewhere around 2­-4 hours to complete, so we aren’t expecting “perfect” code or a 100% complete test suite (if there is such a thing). If you find yourself stuck or spending too much time on the problem, send us what you have with an explanation of what you planned on doing if you were to spend more time on it.
+We expect that this will take you somewhere around 3-4 hours to complete, so we aren’t expecting “perfect” code or a 100% complete test suite (if there is such a thing). If you find yourself stuck or spending too much time on the problem, send us what you have with an explanation of what you planned on doing if you were to spend more time on it.
 
 Good luck!
 
